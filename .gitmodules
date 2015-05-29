@@ -1,0 +1,9 @@
+[submodule "Vendor/UIImage-PDF"]
+	path = Vendor/UIImage-PDF
+	url = https://github.com/mindbrix/UIImage-PDF
+[submodule "Vendor/FontAwesomeKit"]
+	path = Vendor/FontAwesomeKit
+	url = https://github.com/PrideChung/FontAwesomeKit
+[submodule "Vendor/michi-c2"]
+	path = Vendor/michi-c2
+	url = https://github.com/horaceho/michi-c2

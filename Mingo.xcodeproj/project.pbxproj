@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA63C9431B0F197400873767 /* Board.gif in Resources */ = {isa = PBXBuildFile; fileRef = AA63C9421B0F197400873767 /* Board.gif */; };
+		AA91C9141B09921200869625 /* GoBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA91C9131B09921200869625 /* GoBoardView.m */; };
+		AAB3E1901B16F6C2006871CE /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E1821B16F6C2006871CE /* FAKFontAwesome.m */; };
+		AAB3E1911B16F6C2006871CE /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E1841B16F6C2006871CE /* FAKFoundationIcons.m */; };
+		AAB3E1921B16F6C2006871CE /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E1861B16F6C2006871CE /* FAKIcon.m */; };
+		AAB3E1931B16F6C2006871CE /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E1881B16F6C2006871CE /* FAKIonIcons.m */; };
+		AAB3E1941B16F6C2006871CE /* FAKZocial.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E18A1B16F6C2006871CE /* FAKZocial.m */; };
+		AAB3E1951B16F6C2006871CE /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAB3E18B1B16F6C2006871CE /* FontAwesome.otf */; };
+		AAB3E1961B16F6C2006871CE /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAB3E18D1B16F6C2006871CE /* foundation-icons.ttf */; };
+		AAB3E1971B16F6C2006871CE /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAB3E18E1B16F6C2006871CE /* ionicons.ttf */; };
+		AAB3E1981B16F6C2006871CE /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAB3E18F1B16F6C2006871CE /* zocial-regular-webfont.ttf */; };
+		AAB3E1B61B180B50006871CE /* board.c in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E19B1B180B50006871CE /* board.c */; };
+		AAB3E1B91B180B50006871CE /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E19E1B180B50006871CE /* debug.c */; };
+		AAB3E1BF1B180B50006871CE /* michi.c in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E1A41B180B50006871CE /* michi.c */; };
+		AAB3E1C21B180B50006871CE /* patterns.c in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E1A91B180B50006871CE /* patterns.c */; };
+		AAB3E1C41B180B50006871CE /* patterns.prob in Resources */ = {isa = PBXBuildFile; fileRef = AAB3E1AB1B180B50006871CE /* patterns.prob */; };
+		AAB3E1C51B180B50006871CE /* patterns.spat in Resources */ = {isa = PBXBuildFile; fileRef = AAB3E1AC1B180B50006871CE /* patterns.spat */; };
+		AAB3E1D41B1817D7006871CE /* michi-ios.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E1D31B1817D7006871CE /* michi-ios.m */; };
+		AAC32E0A1B05AFBA00FD5263 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC32E091B05AFBA00FD5263 /* main.m */; };
+		AAC32E0D1B05AFBA00FD5263 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC32E0C1B05AFBA00FD5263 /* AppDelegate.m */; };
+		AAC32E101B05AFBA00FD5263 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC32E0F1B05AFBA00FD5263 /* ViewController.m */; };
+		AAC32E131B05AFBA00FD5263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC32E111B05AFBA00FD5263 /* Main.storyboard */; };
+		AAC32E151B05AFBA00FD5263 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC32E141B05AFBA00FD5263 /* Images.xcassets */; };
+		AAC32E181B05AFBA00FD5263 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC32E161B05AFBA00FD5263 /* LaunchScreen.xib */; };
+		AAC32E241B05AFBA00FD5263 /* MingoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC32E231B05AFBA00FD5263 /* MingoTests.m */; };
+		AADC5CCD1B0EE416008E89EC /* BlackStone.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AADC5CC91B0EE416008E89EC /* BlackStone.pdf */; };
+		AADC5CCF1B0EE416008E89EC /* WhiteStone.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AADC5CCB1B0EE416008E89EC /* WhiteStone.pdf */; };
+		AADC5CDE1B0EE443008E89EC /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = AADC5CD41B0EE443008E89EC /* NSData+MD5.m */; };
+		AADC5CDF1B0EE443008E89EC /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = AADC5CD61B0EE443008E89EC /* NSString+MD5.m */; };
+		AADC5CE01B0EE443008E89EC /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = AADC5CD81B0EE443008E89EC /* PDFView.m */; };
+		AADC5CE11B0EE443008E89EC /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = AADC5CDA1B0EE443008E89EC /* UIImage+PDF.m */; };
+		AADC5CE21B0EE443008E89EC /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = AADC5CDC1B0EE443008E89EC /* UIView+Image.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAC32E1E1B05AFBA00FD5263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAC32DFC1B05AFBA00FD5263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAC32E031B05AFBA00FD5263;
+			remoteInfo = Mingo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA63C9421B0F197400873767 /* Board.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Board.gif; sourceTree = "<group>"; };
+		AA6DEAAE1B18504E00FE380C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AA91C9121B09921200869625 /* GoBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoBoardView.h; path = Mingo/Classes/GoBoardView.h; sourceTree = "<group>"; };
+		AA91C9131B09921200869625 /* GoBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoBoardView.m; path = Mingo/Classes/GoBoardView.m; sourceTree = "<group>"; };
+		AAB3E1811B16F6C2006871CE /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
+		AAB3E1821B16F6C2006871CE /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
+		AAB3E1831B16F6C2006871CE /* FAKFoundationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFoundationIcons.h; sourceTree = "<group>"; };
+		AAB3E1841B16F6C2006871CE /* FAKFoundationIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFoundationIcons.m; sourceTree = "<group>"; };
+		AAB3E1851B16F6C2006871CE /* FAKIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIcon.h; sourceTree = "<group>"; };
+		AAB3E1861B16F6C2006871CE /* FAKIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIcon.m; sourceTree = "<group>"; };
+		AAB3E1871B16F6C2006871CE /* FAKIonIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIonIcons.h; sourceTree = "<group>"; };
+		AAB3E1881B16F6C2006871CE /* FAKIonIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIonIcons.m; sourceTree = "<group>"; };
+		AAB3E1891B16F6C2006871CE /* FAKZocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKZocial.h; sourceTree = "<group>"; };
+		AAB3E18A1B16F6C2006871CE /* FAKZocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKZocial.m; sourceTree = "<group>"; };
+		AAB3E18B1B16F6C2006871CE /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		AAB3E18C1B16F6C2006871CE /* FontAwesomeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesomeKit.h; sourceTree = "<group>"; };
+		AAB3E18D1B16F6C2006871CE /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "foundation-icons.ttf"; sourceTree = "<group>"; };
+		AAB3E18E1B16F6C2006871CE /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
+		AAB3E18F1B16F6C2006871CE /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
+		AAB3E19B1B180B50006871CE /* board.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = board.c; sourceTree = "<group>"; };
+		AAB3E19D1B180B50006871CE /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		AAB3E19E1B180B50006871CE /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
+		AAB3E1A41B180B50006871CE /* michi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = michi.c; sourceTree = "<group>"; };
+		AAB3E1A51B180B50006871CE /* michi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = michi.h; sourceTree = "<group>"; };
+		AAB3E1A81B180B50006871CE /* non_portable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = non_portable.h; sourceTree = "<group>"; };
+		AAB3E1A91B180B50006871CE /* patterns.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = patterns.c; sourceTree = "<group>"; };
+		AAB3E1AB1B180B50006871CE /* patterns.prob */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = patterns.prob; sourceTree = "<group>"; };
+		AAB3E1AC1B180B50006871CE /* patterns.spat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = patterns.spat; sourceTree = "<group>"; };
+		AAB3E1AD1B180B50006871CE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AAB3E1D21B1817D7006871CE /* michi-ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "michi-ios.h"; sourceTree = "<group>"; };
+		AAB3E1D31B1817D7006871CE /* michi-ios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "michi-ios.m"; sourceTree = "<group>"; };
+		AAC32E041B05AFBA00FD5263 /* Mingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC32E081B05AFBA00FD5263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC32E091B05AFBA00FD5263 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAC32E0B1B05AFBA00FD5263 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AAC32E0C1B05AFBA00FD5263 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AAC32E0E1B05AFBA00FD5263 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AAC32E0F1B05AFBA00FD5263 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AAC32E121B05AFBA00FD5263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAC32E141B05AFBA00FD5263 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AAC32E171B05AFBA00FD5263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AAC32E1D1B05AFBA00FD5263 /* MingoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MingoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC32E221B05AFBA00FD5263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC32E231B05AFBA00FD5263 /* MingoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MingoTests.m; sourceTree = "<group>"; };
+		AADC5CC91B0EE416008E89EC /* BlackStone.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = BlackStone.pdf; sourceTree = "<group>"; };
+		AADC5CCA1B0EE416008E89EC /* BlackStone.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlackStone.svg; sourceTree = "<group>"; };
+		AADC5CCB1B0EE416008E89EC /* WhiteStone.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = WhiteStone.pdf; sourceTree = "<group>"; };
+		AADC5CCC1B0EE416008E89EC /* WhiteStone.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WhiteStone.svg; sourceTree = "<group>"; };
+		AADC5CD21B0EE443008E89EC /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		AADC5CD31B0EE443008E89EC /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = "<group>"; };
+		AADC5CD41B0EE443008E89EC /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = "<group>"; };
+		AADC5CD51B0EE443008E89EC /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		AADC5CD61B0EE443008E89EC /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		AADC5CD71B0EE443008E89EC /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
+		AADC5CD81B0EE443008E89EC /* PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFView.m; sourceTree = "<group>"; };
+		AADC5CD91B0EE443008E89EC /* UIImage+PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PDF.h"; sourceTree = "<group>"; };
+		AADC5CDA1B0EE443008E89EC /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
+		AADC5CDB1B0EE443008E89EC /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
+		AADC5CDC1B0EE443008E89EC /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAC32E011B05AFBA00FD5263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC32E1A1B05AFBA00FD5263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA63C9411B0F197400873767 /* Boards */ = {
+			isa = PBXGroup;
+			children = (
+				AA63C9421B0F197400873767 /* Board.gif */,
+			);
+			path = Boards;
+			sourceTree = "<group>";
+		};
+		AA91C90E1B097BD300869625 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AA91C9121B09921200869625 /* GoBoardView.h */,
+				AA91C9131B09921200869625 /* GoBoardView.m */,
+			);
+			name = Classes;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AAB3E1801B16F6C2006871CE /* FontAwesomeKit */ = {
+			isa = PBXGroup;
+			children = (
+				AAB3E1811B16F6C2006871CE /* FAKFontAwesome.h */,
+				AAB3E1821B16F6C2006871CE /* FAKFontAwesome.m */,
+				AAB3E1831B16F6C2006871CE /* FAKFoundationIcons.h */,
+				AAB3E1841B16F6C2006871CE /* FAKFoundationIcons.m */,
+				AAB3E1851B16F6C2006871CE /* FAKIcon.h */,
+				AAB3E1861B16F6C2006871CE /* FAKIcon.m */,
+				AAB3E1871B16F6C2006871CE /* FAKIonIcons.h */,
+				AAB3E1881B16F6C2006871CE /* FAKIonIcons.m */,
+				AAB3E1891B16F6C2006871CE /* FAKZocial.h */,
+				AAB3E18A1B16F6C2006871CE /* FAKZocial.m */,
+				AAB3E18B1B16F6C2006871CE /* FontAwesome.otf */,
+				AAB3E18C1B16F6C2006871CE /* FontAwesomeKit.h */,
+				AAB3E18D1B16F6C2006871CE /* foundation-icons.ttf */,
+				AAB3E18E1B16F6C2006871CE /* ionicons.ttf */,
+				AAB3E18F1B16F6C2006871CE /* zocial-regular-webfont.ttf */,
+			);
+			name = FontAwesomeKit;
+			path = FontAwesomeKit/FontAwesomeKit;
+			sourceTree = "<group>";
+		};
+		AAB3E1991B180B50006871CE /* michi-c2 */ = {
+			isa = PBXGroup;
+			children = (
+				AAB3E1AD1B180B50006871CE /* README.md */,
+				AAB3E19D1B180B50006871CE /* ChangeLog */,
+				AAB3E1A81B180B50006871CE /* non_portable.h */,
+				AAB3E1A51B180B50006871CE /* michi.h */,
+				AAB3E1A41B180B50006871CE /* michi.c */,
+				AAB3E19B1B180B50006871CE /* board.c */,
+				AAB3E19E1B180B50006871CE /* debug.c */,
+				AAB3E1A91B180B50006871CE /* patterns.c */,
+				AAB3E1AB1B180B50006871CE /* patterns.prob */,
+				AAB3E1AC1B180B50006871CE /* patterns.spat */,
+			);
+			path = "michi-c2";
+			sourceTree = "<group>";
+		};
+		AAB3E1D11B1817D7006871CE /* michi-ios */ = {
+			isa = PBXGroup;
+			children = (
+				AAB3E1D21B1817D7006871CE /* michi-ios.h */,
+				AAB3E1D31B1817D7006871CE /* michi-ios.m */,
+			);
+			name = "michi-ios";
+			path = "Mingo/Classes/michi-ios";
+			sourceTree = SOURCE_ROOT;
+		};
+		AAC32DFB1B05AFBA00FD5263 = {
+			isa = PBXGroup;
+			children = (
+				AAC32E061B05AFBA00FD5263 /* Mingo */,
+				AAC32E2D1B05B3EC00FD5263 /* Vendor */,
+				AAC32E201B05AFBA00FD5263 /* MingoTests */,
+				AAC32E051B05AFBA00FD5263 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAC32E051B05AFBA00FD5263 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAC32E041B05AFBA00FD5263 /* Mingo.app */,
+				AAC32E1D1B05AFBA00FD5263 /* MingoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAC32E061B05AFBA00FD5263 /* Mingo */ = {
+			isa = PBXGroup;
+			children = (
+				AA91C90E1B097BD300869625 /* Classes */,
+				AADC5CC71B0EE416008E89EC /* Graphics */,
+				AAC32E0B1B05AFBA00FD5263 /* AppDelegate.h */,
+				AAC32E0C1B05AFBA00FD5263 /* AppDelegate.m */,
+				AAC32E0E1B05AFBA00FD5263 /* ViewController.h */,
+				AAC32E0F1B05AFBA00FD5263 /* ViewController.m */,
+				AAC32E111B05AFBA00FD5263 /* Main.storyboard */,
+				AAC32E141B05AFBA00FD5263 /* Images.xcassets */,
+				AAC32E161B05AFBA00FD5263 /* LaunchScreen.xib */,
+				AAC32E071B05AFBA00FD5263 /* Supporting Files */,
+			);
+			path = Mingo;
+			sourceTree = "<group>";
+		};
+		AAC32E071B05AFBA00FD5263 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA6DEAAE1B18504E00FE380C /* README.md */,
+				AAC32E081B05AFBA00FD5263 /* Info.plist */,
+				AAC32E091B05AFBA00FD5263 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAC32E201B05AFBA00FD5263 /* MingoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAC32E231B05AFBA00FD5263 /* MingoTests.m */,
+				AAC32E211B05AFBA00FD5263 /* Supporting Files */,
+			);
+			path = MingoTests;
+			sourceTree = "<group>";
+		};
+		AAC32E211B05AFBA00FD5263 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAC32E221B05AFBA00FD5263 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAC32E2D1B05B3EC00FD5263 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				AAB3E1991B180B50006871CE /* michi-c2 */,
+				AAB3E1D11B1817D7006871CE /* michi-ios */,
+				AAB3E1801B16F6C2006871CE /* FontAwesomeKit */,
+				AADC5CD11B0EE443008E89EC /* UIImage+PDF */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		AADC5CC71B0EE416008E89EC /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				AA63C9411B0F197400873767 /* Boards */,
+				AADC5CC81B0EE416008E89EC /* Stones */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		AADC5CC81B0EE416008E89EC /* Stones */ = {
+			isa = PBXGroup;
+			children = (
+				AADC5CC91B0EE416008E89EC /* BlackStone.pdf */,
+				AADC5CCA1B0EE416008E89EC /* BlackStone.svg */,
+				AADC5CCB1B0EE416008E89EC /* WhiteStone.pdf */,
+				AADC5CCC1B0EE416008E89EC /* WhiteStone.svg */,
+			);
+			path = Stones;
+			sourceTree = "<group>";
+		};
+		AADC5CD11B0EE443008E89EC /* UIImage+PDF */ = {
+			isa = PBXGroup;
+			children = (
+				AADC5CD31B0EE443008E89EC /* NSData+MD5.h */,
+				AADC5CD41B0EE443008E89EC /* NSData+MD5.m */,
+				AADC5CD51B0EE443008E89EC /* NSString+MD5.h */,
+				AADC5CD61B0EE443008E89EC /* NSString+MD5.m */,
+				AADC5CD71B0EE443008E89EC /* PDFView.h */,
+				AADC5CD81B0EE443008E89EC /* PDFView.m */,
+				AADC5CD91B0EE443008E89EC /* UIImage+PDF.h */,
+				AADC5CDA1B0EE443008E89EC /* UIImage+PDF.m */,
+				AADC5CDB1B0EE443008E89EC /* UIView+Image.h */,
+				AADC5CDC1B0EE443008E89EC /* UIView+Image.m */,
+				AADC5CD21B0EE443008E89EC /* LICENSE.txt */,
+			);
+			name = "UIImage+PDF";
+			path = "UIImage-PDF/UIImage+PDF";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAC32E031B05AFBA00FD5263 /* Mingo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC32E271B05AFBA00FD5263 /* Build configuration list for PBXNativeTarget "Mingo" */;
+			buildPhases = (
+				AAC32E001B05AFBA00FD5263 /* Sources */,
+				AAC32E011B05AFBA00FD5263 /* Frameworks */,
+				AAC32E021B05AFBA00FD5263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mingo;
+			productName = Mingo;
+			productReference = AAC32E041B05AFBA00FD5263 /* Mingo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAC32E1C1B05AFBA00FD5263 /* MingoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC32E2A1B05AFBA00FD5263 /* Build configuration list for PBXNativeTarget "MingoTests" */;
+			buildPhases = (
+				AAC32E191B05AFBA00FD5263 /* Sources */,
+				AAC32E1A1B05AFBA00FD5263 /* Frameworks */,
+				AAC32E1B1B05AFBA00FD5263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAC32E1F1B05AFBA00FD5263 /* PBXTargetDependency */,
+			);
+			name = MingoTests;
+			productName = MingoTests;
+			productReference = AAC32E1D1B05AFBA00FD5263 /* MingoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAC32DFC1B05AFBA00FD5263 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Horace Ho";
+				TargetAttributes = {
+					AAC32E031B05AFBA00FD5263 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					AAC32E1C1B05AFBA00FD5263 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = AAC32E031B05AFBA00FD5263;
+					};
+				};
+			};
+			buildConfigurationList = AAC32DFF1B05AFBA00FD5263 /* Build configuration list for PBXProject "Mingo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAC32DFB1B05AFBA00FD5263;
+			productRefGroup = AAC32E051B05AFBA00FD5263 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAC32E031B05AFBA00FD5263 /* Mingo */,
+				AAC32E1C1B05AFBA00FD5263 /* MingoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAC32E021B05AFBA00FD5263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADC5CCD1B0EE416008E89EC /* BlackStone.pdf in Resources */,
+				AAB3E1C41B180B50006871CE /* patterns.prob in Resources */,
+				AAB3E1981B16F6C2006871CE /* zocial-regular-webfont.ttf in Resources */,
+				AAB3E1971B16F6C2006871CE /* ionicons.ttf in Resources */,
+				AAC32E131B05AFBA00FD5263 /* Main.storyboard in Resources */,
+				AAC32E181B05AFBA00FD5263 /* LaunchScreen.xib in Resources */,
+				AA63C9431B0F197400873767 /* Board.gif in Resources */,
+				AAB3E1961B16F6C2006871CE /* foundation-icons.ttf in Resources */,
+				AAB3E1951B16F6C2006871CE /* FontAwesome.otf in Resources */,
+				AADC5CCF1B0EE416008E89EC /* WhiteStone.pdf in Resources */,
+				AAB3E1C51B180B50006871CE /* patterns.spat in Resources */,
+				AAC32E151B05AFBA00FD5263 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC32E1B1B05AFBA00FD5263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAC32E001B05AFBA00FD5263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADC5CDE1B0EE443008E89EC /* NSData+MD5.m in Sources */,
+				AADC5CDF1B0EE443008E89EC /* NSString+MD5.m in Sources */,
+				AADC5CE01B0EE443008E89EC /* PDFView.m in Sources */,
+				AAC32E101B05AFBA00FD5263 /* ViewController.m in Sources */,
+				AAB3E1911B16F6C2006871CE /* FAKFoundationIcons.m in Sources */,
+				AADC5CE11B0EE443008E89EC /* UIImage+PDF.m in Sources */,
+				AAB3E1941B16F6C2006871CE /* FAKZocial.m in Sources */,
+				AAB3E1B61B180B50006871CE /* board.c in Sources */,
+				AAB3E1B91B180B50006871CE /* debug.c in Sources */,
+				AAB3E1BF1B180B50006871CE /* michi.c in Sources */,
+				AAC32E0D1B05AFBA00FD5263 /* AppDelegate.m in Sources */,
+				AAB3E1931B16F6C2006871CE /* FAKIonIcons.m in Sources */,
+				AADC5CE21B0EE443008E89EC /* UIView+Image.m in Sources */,
+				AAC32E0A1B05AFBA00FD5263 /* main.m in Sources */,
+				AAB3E1D41B1817D7006871CE /* michi-ios.m in Sources */,
+				AA91C9141B09921200869625 /* GoBoardView.m in Sources */,
+				AAB3E1C21B180B50006871CE /* patterns.c in Sources */,
+				AAB3E1901B16F6C2006871CE /* FAKFontAwesome.m in Sources */,
+				AAB3E1921B16F6C2006871CE /* FAKIcon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC32E191B05AFBA00FD5263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC32E241B05AFBA00FD5263 /* MingoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAC32E1F1B05AFBA00FD5263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAC32E031B05AFBA00FD5263 /* Mingo */;
+			targetProxy = AAC32E1E1B05AFBA00FD5263 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAC32E111B05AFBA00FD5263 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC32E121B05AFBA00FD5263 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAC32E161B05AFBA00FD5263 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC32E171B05AFBA00FD5263 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAC32E251B05AFBA00FD5263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAC32E261B05AFBA00FD5263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAC32E281B05AFBA00FD5263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Mingo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AAC32E291B05AFBA00FD5263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Mingo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AAC32E2B1B05AFBA00FD5263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MingoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mingo.app/Mingo";
+			};
+			name = Debug;
+		};
+		AAC32E2C1B05AFBA00FD5263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MingoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mingo.app/Mingo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAC32DFF1B05AFBA00FD5263 /* Build configuration list for PBXProject "Mingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC32E251B05AFBA00FD5263 /* Debug */,
+				AAC32E261B05AFBA00FD5263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC32E271B05AFBA00FD5263 /* Build configuration list for PBXNativeTarget "Mingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC32E281B05AFBA00FD5263 /* Debug */,
+				AAC32E291B05AFBA00FD5263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC32E2A1B05AFBA00FD5263 /* Build configuration list for PBXNativeTarget "MingoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC32E2B1B05AFBA00FD5263 /* Debug */,
+				AAC32E2C1B05AFBA00FD5263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAC32DFC1B05AFBA00FD5263 /* Project object */;
+}
