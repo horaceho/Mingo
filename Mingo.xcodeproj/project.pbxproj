@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		AA63C9431B0F197400873767 /* Board.gif in Resources */ = {isa = PBXBuildFile; fileRef = AA63C9421B0F197400873767 /* Board.gif */; };
 		AA91C9141B09921200869625 /* GoBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA91C9131B09921200869625 /* GoBoardView.m */; };
+		AAA1D6191B18676E00D9CC26 /* execute.c in Sources */ = {isa = PBXBuildFile; fileRef = AAA1D6091B18676E00D9CC26 /* execute.c */; };
+		AAA1D61A1B18676E00D9CC26 /* gameinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = AAA1D60A1B18676E00D9CC26 /* gameinfo.c */; };
+		AAA1D61B1B18676E00D9CC26 /* load.c in Sources */ = {isa = PBXBuildFile; fileRef = AAA1D60B1B18676E00D9CC26 /* load.c */; };
+		AAA1D61C1B18676E00D9CC26 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = AAA1D60C1B18676E00D9CC26 /* main.c */; };
+		AAA1D61E1B18676E00D9CC26 /* parse.c in Sources */ = {isa = PBXBuildFile; fileRef = AAA1D60E1B18676E00D9CC26 /* parse.c */; };
+		AAA1D61F1B18676E00D9CC26 /* parse2.c in Sources */ = {isa = PBXBuildFile; fileRef = AAA1D60F1B18676E00D9CC26 /* parse2.c */; };
+		AAA1D6201B18676E00D9CC26 /* properties.c in Sources */ = {isa = PBXBuildFile; fileRef = AAA1D6101B18676E00D9CC26 /* properties.c */; };
+		AAA1D6221B18676E00D9CC26 /* save.c in Sources */ = {isa = PBXBuildFile; fileRef = AAA1D6131B18676E00D9CC26 /* save.c */; };
+		AAA1D6231B18676E00D9CC26 /* strict.c in Sources */ = {isa = PBXBuildFile; fileRef = AAA1D6141B18676E00D9CC26 /* strict.c */; };
+		AAA1D6251B18676E00D9CC26 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = AAA1D6161B18676E00D9CC26 /* util.c */; };
+		AAB070371B1BFE380016A519 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB070361B1BFE380016A519 /* Metal.framework */; };
 		AAB3E1901B16F6C2006871CE /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E1821B16F6C2006871CE /* FAKFontAwesome.m */; };
 		AAB3E1911B16F6C2006871CE /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E1841B16F6C2006871CE /* FAKFoundationIcons.m */; };
 		AAB3E1921B16F6C2006871CE /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E1861B16F6C2006871CE /* FAKIcon.m */; };
@@ -39,6 +50,8 @@
 		AADC5CE01B0EE443008E89EC /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = AADC5CD81B0EE443008E89EC /* PDFView.m */; };
 		AADC5CE11B0EE443008E89EC /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = AADC5CDA1B0EE443008E89EC /* UIImage+PDF.m */; };
 		AADC5CE21B0EE443008E89EC /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = AADC5CDC1B0EE443008E89EC /* UIView+Image.m */; };
+		AAF73D731B2596560046C31C /* Yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = AAF73D721B2596560046C31C /* Yellow.png */; };
+		AAF73D751B25A2050046C31C /* params.c in Sources */ = {isa = PBXBuildFile; fileRef = AAF73D741B25A2050046C31C /* params.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +69,21 @@
 		AA6DEAAE1B18504E00FE380C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AA91C9121B09921200869625 /* GoBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoBoardView.h; path = Mingo/Classes/GoBoardView.h; sourceTree = "<group>"; };
 		AA91C9131B09921200869625 /* GoBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoBoardView.m; path = Mingo/Classes/GoBoardView.m; sourceTree = "<group>"; };
+		AAA1D6071B18676E00D9CC26 /* all.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = all.h; sourceTree = "<group>"; };
+		AAA1D6081B18676E00D9CC26 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		AAA1D6091B18676E00D9CC26 /* execute.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = execute.c; sourceTree = "<group>"; };
+		AAA1D60A1B18676E00D9CC26 /* gameinfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gameinfo.c; sourceTree = "<group>"; };
+		AAA1D60B1B18676E00D9CC26 /* load.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = load.c; sourceTree = "<group>"; };
+		AAA1D60C1B18676E00D9CC26 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		AAA1D60E1B18676E00D9CC26 /* parse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parse.c; sourceTree = "<group>"; };
+		AAA1D60F1B18676E00D9CC26 /* parse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parse2.c; sourceTree = "<group>"; };
+		AAA1D6101B18676E00D9CC26 /* properties.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = properties.c; sourceTree = "<group>"; };
+		AAA1D6111B18676E00D9CC26 /* protos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = protos.h; sourceTree = "<group>"; };
+		AAA1D6121B18676E00D9CC26 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		AAA1D6131B18676E00D9CC26 /* save.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = save.c; sourceTree = "<group>"; };
+		AAA1D6141B18676E00D9CC26 /* strict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strict.c; sourceTree = "<group>"; };
+		AAA1D6161B18676E00D9CC26 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
+		AAB070361B1BFE380016A519 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		AAB3E1811B16F6C2006871CE /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
 		AAB3E1821B16F6C2006871CE /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
 		AAB3E1831B16F6C2006871CE /* FAKFoundationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFoundationIcons.h; sourceTree = "<group>"; };
@@ -111,6 +139,8 @@
 		AADC5CDA1B0EE443008E89EC /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
 		AADC5CDB1B0EE443008E89EC /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
 		AADC5CDC1B0EE443008E89EC /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
+		AAF73D721B2596560046C31C /* Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow.png; sourceTree = "<group>"; };
+		AAF73D741B25A2050046C31C /* params.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = params.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAB070371B1BFE380016A519 /* Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +165,7 @@
 		AA63C9411B0F197400873767 /* Boards */ = {
 			isa = PBXGroup;
 			children = (
+				AAF73D721B2596560046C31C /* Yellow.png */,
 				AA63C9421B0F197400873767 /* Board.gif */,
 			);
 			path = Boards;
@@ -147,6 +179,27 @@
 			);
 			name = Classes;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		AAA1D6051B18676E00D9CC26 /* sgfc */ = {
+			isa = PBXGroup;
+			children = (
+				AAA1D6121B18676E00D9CC26 /* README */,
+				AAA1D6081B18676E00D9CC26 /* COPYING */,
+				AAA1D6071B18676E00D9CC26 /* all.h */,
+				AAA1D6091B18676E00D9CC26 /* execute.c */,
+				AAA1D60A1B18676E00D9CC26 /* gameinfo.c */,
+				AAA1D60B1B18676E00D9CC26 /* load.c */,
+				AAA1D60C1B18676E00D9CC26 /* main.c */,
+				AAA1D60E1B18676E00D9CC26 /* parse.c */,
+				AAA1D60F1B18676E00D9CC26 /* parse2.c */,
+				AAA1D6101B18676E00D9CC26 /* properties.c */,
+				AAA1D6111B18676E00D9CC26 /* protos.h */,
+				AAA1D6131B18676E00D9CC26 /* save.c */,
+				AAA1D6141B18676E00D9CC26 /* strict.c */,
+				AAA1D6161B18676E00D9CC26 /* util.c */,
+			);
+			path = sgfc;
 			sourceTree = "<group>";
 		};
 		AAB3E1801B16F6C2006871CE /* FontAwesomeKit */ = {
@@ -182,6 +235,7 @@
 				AAB3E1A41B180B50006871CE /* michi.c */,
 				AAB3E19B1B180B50006871CE /* board.c */,
 				AAB3E19E1B180B50006871CE /* debug.c */,
+				AAF73D741B25A2050046C31C /* params.c */,
 				AAB3E1A91B180B50006871CE /* patterns.c */,
 				AAB3E1AB1B180B50006871CE /* patterns.prob */,
 				AAB3E1AC1B180B50006871CE /* patterns.spat */,
@@ -202,6 +256,7 @@
 		AAC32DFB1B05AFBA00FD5263 = {
 			isa = PBXGroup;
 			children = (
+				AAB070361B1BFE380016A519 /* Metal.framework */,
 				AAC32E061B05AFBA00FD5263 /* Mingo */,
 				AAC32E2D1B05B3EC00FD5263 /* Vendor */,
 				AAC32E201B05AFBA00FD5263 /* MingoTests */,
@@ -267,6 +322,7 @@
 			children = (
 				AAB3E1991B180B50006871CE /* michi-c2 */,
 				AAB3E1D11B1817D7006871CE /* michi-ios */,
+				AAA1D6051B18676E00D9CC26 /* sgfc */,
 				AAB3E1801B16F6C2006871CE /* FontAwesomeKit */,
 				AADC5CD11B0EE443008E89EC /* UIImage+PDF */,
 			);
@@ -361,6 +417,7 @@
 				TargetAttributes = {
 					AAC32E031B05AFBA00FD5263 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 58479H4BXP;
 					};
 					AAC32E1C1B05AFBA00FD5263 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -401,6 +458,7 @@
 				AA63C9431B0F197400873767 /* Board.gif in Resources */,
 				AAB3E1961B16F6C2006871CE /* foundation-icons.ttf in Resources */,
 				AAB3E1951B16F6C2006871CE /* FontAwesome.otf in Resources */,
+				AAF73D731B2596560046C31C /* Yellow.png in Resources */,
 				AADC5CCF1B0EE416008E89EC /* WhiteStone.pdf in Resources */,
 				AAB3E1C51B180B50006871CE /* patterns.spat in Resources */,
 				AAC32E151B05AFBA00FD5263 /* Images.xcassets in Resources */,
@@ -422,15 +480,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				AADC5CDE1B0EE443008E89EC /* NSData+MD5.m in Sources */,
+				AAA1D61B1B18676E00D9CC26 /* load.c in Sources */,
+				AAA1D6231B18676E00D9CC26 /* strict.c in Sources */,
+				AAA1D6191B18676E00D9CC26 /* execute.c in Sources */,
 				AADC5CDF1B0EE443008E89EC /* NSString+MD5.m in Sources */,
+				AAA1D6251B18676E00D9CC26 /* util.c in Sources */,
+				AAA1D61E1B18676E00D9CC26 /* parse.c in Sources */,
+				AAA1D61C1B18676E00D9CC26 /* main.c in Sources */,
 				AADC5CE01B0EE443008E89EC /* PDFView.m in Sources */,
 				AAC32E101B05AFBA00FD5263 /* ViewController.m in Sources */,
 				AAB3E1911B16F6C2006871CE /* FAKFoundationIcons.m in Sources */,
 				AADC5CE11B0EE443008E89EC /* UIImage+PDF.m in Sources */,
 				AAB3E1941B16F6C2006871CE /* FAKZocial.m in Sources */,
+				AAA1D61F1B18676E00D9CC26 /* parse2.c in Sources */,
 				AAB3E1B61B180B50006871CE /* board.c in Sources */,
+				AAA1D6221B18676E00D9CC26 /* save.c in Sources */,
 				AAB3E1B91B180B50006871CE /* debug.c in Sources */,
 				AAB3E1BF1B180B50006871CE /* michi.c in Sources */,
+				AAA1D6201B18676E00D9CC26 /* properties.c in Sources */,
+				AAA1D61A1B18676E00D9CC26 /* gameinfo.c in Sources */,
 				AAC32E0D1B05AFBA00FD5263 /* AppDelegate.m in Sources */,
 				AAB3E1931B16F6C2006871CE /* FAKIonIcons.m in Sources */,
 				AADC5CE21B0EE443008E89EC /* UIView+Image.m in Sources */,
@@ -440,6 +508,7 @@
 				AAB3E1C21B180B50006871CE /* patterns.c in Sources */,
 				AAB3E1901B16F6C2006871CE /* FAKFontAwesome.m in Sources */,
 				AAB3E1921B16F6C2006871CE /* FAKIcon.m in Sources */,
+				AAF73D751B25A2050046C31C /* params.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +578,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					VERSION_NO_MAIN,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -549,6 +619,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = VERSION_NO_MAIN;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -567,9 +638,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Mingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -577,9 +651,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Mingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

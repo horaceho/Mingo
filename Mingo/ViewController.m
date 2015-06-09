@@ -41,7 +41,7 @@
 
     self.boardView.isLabelOn = NO;
 
-    UIImage *boardImage = [UIImage imageNamed:@"Board.gif"];
+    UIImage *boardImage = [UIImage imageNamed:@"Yellow.png"];
     UIColor *color = [UIColor colorWithPatternImage:boardImage];
     self.boardView.backgroundColor = color;
 

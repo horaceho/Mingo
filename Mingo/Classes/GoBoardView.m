@@ -173,11 +173,11 @@
 - (void)drawBoard {
  // NSLog(@"%s boardRect: %@", __func__, NSStringFromCGRect(self.boardRect));
     CGContextRef context = UIGraphicsGetCurrentContext();
- /*
+
     CGContextSetStrokeColorWithColor(context, UIColor.redColor.CGColor);
     CGContextSetLineWidth(context, 1.0);
     CGContextStrokeRect(context, self.boardRect);
- */
+
     CGFloat lineWidth = 1.0;
     CGFloat frameWidth = 2.0;
 

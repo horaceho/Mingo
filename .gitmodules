@@ -7,3 +7,6 @@
 [submodule "Vendor/michi-c2"]
 	path = Vendor/michi-c2
 	url = https://github.com/horaceho/michi-c2
+[submodule "Vendor/sgfc"]
+	path = Vendor/sgfc
+	url = https://github.com/horaceho/sgfc
