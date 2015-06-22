@@ -3,12 +3,14 @@
 
 static TreeNode *tree;
 static Position *pos = nil, curr_pos, last_pos;
+static int *amaf_map;
 static int *owner_map;
 
 char* empty_position(Position *pos);
 TreeNode* new_tree_node(Position *pos);
 void free_tree(TreeNode *tree);
 Point tree_search(TreeNode *tree, int n, int owner_map[], int disp);
+double mcbenchmark(int n, Position *pos, int amaf_map[], int owner_map[]);
 
 @interface Michi()
 
@@ -32,6 +34,7 @@ Point tree_search(TreeNode *tree, int n, int owner_map[], int disp);
         empty_position(pos);
         last_pos = curr_pos;
         tree = new_tree_node(pos);
+        amaf_map = calloc(BOARDSIZE, sizeof(int));
         owner_map = calloc(BOARDSIZE, sizeof(int));
     });
     return sharedInstance;
@@ -188,6 +191,13 @@ Point tree_search(TreeNode *tree, int n, int owner_map[], int disp);
 
 - (void)autoLoadGame {
     [self loadGame:self.defaultFilename];
+}
+
+- (void)benchmark {
+    NSLog(@"%s", __func__);
+    double score = mcbenchmark(N_SIMS, pos, amaf_map, owner_map);
+    printf("%lf\n", score);
+    NSLog(@"%s", __func__);
 }
 
 @end

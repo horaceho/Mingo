@@ -39,6 +39,8 @@ typedef struct GoPoint GoPoint;
 - (void)autoSaveGame;
 - (void)autoLoadGame;
 
+- (void)benchmark;
+
 - (GoStone)whosTurn;
 - (GoStone)stoneAt:(GoPoint)point;
 

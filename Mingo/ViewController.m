@@ -40,11 +40,11 @@
     [self.boardView addGestureRecognizer:singleFingerTap];
 
     self.boardView.isLabelOn = NO;
-
+ /*
     UIImage *boardImage = [UIImage imageNamed:@"Yellow.png"];
     UIColor *color = [UIColor colorWithPatternImage:boardImage];
     self.boardView.backgroundColor = color;
-
+ */
     [NSTimer scheduledTimerWithTimeInterval:1.0
                                      target:self
                                    selector:@selector(heartBeat:)
@@ -153,12 +153,13 @@
     NSString *resetTitle = NSLocalizedString(@"Reset", nil);
     NSString *loadTitle = NSLocalizedString(@"Load", nil);
     NSString *saveTitle = NSLocalizedString(@"Save", nil);
+    NSString *benchmarkTitle = NSLocalizedString(@"Benchmark", nil);
     NSString *helpTitle = NSLocalizedString(@"Help", nil);
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
                                                              delegate:self
                                                     cancelButtonTitle:cancelTitle
                                                destructiveButtonTitle:resetTitle
-                                                    otherButtonTitles:loadTitle, saveTitle, helpTitle, nil];
+                                                    otherButtonTitles:loadTitle, saveTitle, benchmarkTitle, helpTitle, nil];
     [actionSheet showFromRect:button.frame inView:self.view animated:YES];
     [self refreshButtons];
 }
@@ -179,8 +180,11 @@
             [Michi.one autoSaveGame];
             [self refreshAll];
         }
-    } else if  (buttonIndex == 3) { // Help
-        ;
+    } else if  (buttonIndex == 3) { // Benchmark
+        if (!self.computerThinking) {
+            [Michi.one benchmark];
+            [self refreshAll];
+        }
     }
     [self refreshButtons];
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA45A9831B2E642D00067B7E /* ui.c in Sources */ = {isa = PBXBuildFile; fileRef = AA45A9821B2E642D00067B7E /* ui.c */; };
 		AA63C9431B0F197400873767 /* Board.gif in Resources */ = {isa = PBXBuildFile; fileRef = AA63C9421B0F197400873767 /* Board.gif */; };
 		AA91C9141B09921200869625 /* GoBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA91C9131B09921200869625 /* GoBoardView.m */; };
 		AAA1D6191B18676E00D9CC26 /* execute.c in Sources */ = {isa = PBXBuildFile; fileRef = AAA1D6091B18676E00D9CC26 /* execute.c */; };
@@ -19,7 +20,6 @@
 		AAA1D6221B18676E00D9CC26 /* save.c in Sources */ = {isa = PBXBuildFile; fileRef = AAA1D6131B18676E00D9CC26 /* save.c */; };
 		AAA1D6231B18676E00D9CC26 /* strict.c in Sources */ = {isa = PBXBuildFile; fileRef = AAA1D6141B18676E00D9CC26 /* strict.c */; };
 		AAA1D6251B18676E00D9CC26 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = AAA1D6161B18676E00D9CC26 /* util.c */; };
-		AAB070371B1BFE380016A519 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB070361B1BFE380016A519 /* Metal.framework */; };
 		AAB3E1901B16F6C2006871CE /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E1821B16F6C2006871CE /* FAKFontAwesome.m */; };
 		AAB3E1911B16F6C2006871CE /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E1841B16F6C2006871CE /* FAKFoundationIcons.m */; };
 		AAB3E1921B16F6C2006871CE /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB3E1861B16F6C2006871CE /* FAKIcon.m */; };
@@ -65,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA45A9821B2E642D00067B7E /* ui.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ui.c; sourceTree = "<group>"; };
 		AA63C9421B0F197400873767 /* Board.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Board.gif; sourceTree = "<group>"; };
 		AA6DEAAE1B18504E00FE380C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AA91C9121B09921200869625 /* GoBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoBoardView.h; path = Mingo/Classes/GoBoardView.h; sourceTree = "<group>"; };
@@ -83,7 +84,6 @@
 		AAA1D6131B18676E00D9CC26 /* save.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = save.c; sourceTree = "<group>"; };
 		AAA1D6141B18676E00D9CC26 /* strict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strict.c; sourceTree = "<group>"; };
 		AAA1D6161B18676E00D9CC26 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
-		AAB070361B1BFE380016A519 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		AAB3E1811B16F6C2006871CE /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
 		AAB3E1821B16F6C2006871CE /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
 		AAB3E1831B16F6C2006871CE /* FAKFoundationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFoundationIcons.h; sourceTree = "<group>"; };
@@ -148,7 +148,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAB070371B1BFE380016A519 /* Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +236,7 @@
 				AAB3E19E1B180B50006871CE /* debug.c */,
 				AAF73D741B25A2050046C31C /* params.c */,
 				AAB3E1A91B180B50006871CE /* patterns.c */,
+				AA45A9821B2E642D00067B7E /* ui.c */,
 				AAB3E1AB1B180B50006871CE /* patterns.prob */,
 				AAB3E1AC1B180B50006871CE /* patterns.spat */,
 			);
@@ -256,7 +256,6 @@
 		AAC32DFB1B05AFBA00FD5263 = {
 			isa = PBXGroup;
 			children = (
-				AAB070361B1BFE380016A519 /* Metal.framework */,
 				AAC32E061B05AFBA00FD5263 /* Mingo */,
 				AAC32E2D1B05B3EC00FD5263 /* Vendor */,
 				AAC32E201B05AFBA00FD5263 /* MingoTests */,
@@ -480,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AADC5CDE1B0EE443008E89EC /* NSData+MD5.m in Sources */,
+				AA45A9831B2E642D00067B7E /* ui.c in Sources */,
 				AAA1D61B1B18676E00D9CC26 /* load.c in Sources */,
 				AAA1D6231B18676E00D9CC26 /* strict.c in Sources */,
 				AAA1D6191B18676E00D9CC26 /* execute.c in Sources */,
@@ -554,6 +554,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -599,6 +600,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
